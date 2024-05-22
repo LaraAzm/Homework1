@@ -1,0 +1,53 @@
+---
+title: "DataScienceThruQuarto"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+### Data Science
+
+Being a data scientist is mainly about turning raw information into easily visualized and pretty graphs and figures. Statisticians focus mainly only the more raw outputs but a **data scientist** should also be able to tell a good *story* with the information they have generated. The stories tend to be in the form of dry reports but the idea still stands. I lean mostly on the side of data scientist as I find that writing up reports to be the best part of dealing with data!
+
+### Trying data processing
+
+Using the iris dataset and trying out visualizing a specific vector
+
+Computing kernel density of sepal length
+
+```{r}
+density(iris$Sepal.Length)
+```
+
+Set "y" as the density of sepal length
+
+```{r}
+y <- density(iris$Sepal.Length)
+```
+
+Determine the +class of "y"
+
+```{r}
+class(y)
+```
+
+type of "y"
+
+```{r}
+typeof(y)
+```
+
+structure of "y"
+
+```{r}
+str(y)
+```
+
+Plot "y" and change the title and x-axis label
+
+```{r}
+#| echo: false
+plot(y, main="Sepal Length", 
+     xlab="Length in cm")
+```
