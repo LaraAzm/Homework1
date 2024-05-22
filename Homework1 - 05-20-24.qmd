@@ -26,7 +26,9 @@ Set "y" as the density of sepal length
 y <- density(iris$Sepal.Length)
 ```
 
-Determine the +class of "y"
+Determine the:
+
+class of "y"
 
 ```{r}
 class(y)
