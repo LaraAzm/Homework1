@@ -1,0 +1,9 @@
+[
+  {
+    "objectID": "Homework1 - 05-20-24.html",
+    "href": "Homework1 - 05-20-24.html",
+    "title": "DataScienceThruQuarto",
+    "section": "",
+    "text": "Data Science\nBeing a data scientist is mainly about turning raw information into easily visualized and pretty graphs and figures. Statisticians focus mainly only the more raw outputs but a data scientist should also be able to tell a good story with the information they have generated. The stories tend to be in the form of dry reports but the idea still stands. I lean mostly on the side of data scientist as I find that writing up reports to be the best part of dealing with data!\n\n\nTrying data processing\nUsing the iris dataset and trying out visualizing a specific vector\nComputing kernel density of sepal length\n\ndensity(iris$Sepal.Length)\n\n\nCall:\n    density.default(x = iris$Sepal.Length)\n\nData: iris$Sepal.Length (150 obs.); Bandwidth 'bw' = 0.2736\n\n       x               y           \n Min.   :3.479   Min.   :0.000148  \n 1st Qu.:4.790   1st Qu.:0.034088  \n Median :6.100   Median :0.153218  \n Mean   :6.100   Mean   :0.190407  \n 3rd Qu.:7.410   3rd Qu.:0.378921  \n Max.   :8.721   Max.   :0.396476  \n\n\nSet “y” as the density of sepal length\n\ny &lt;- density(iris$Sepal.Length)\n\nDetermine the +class of “y”\n\nclass(y)\n\n[1] \"density\"\n\n\ntype of “y”\n\ntypeof(y)\n\n[1] \"list\"\n\n\nstructure of “y”\n\nstr(y)\n\nList of 8\n $ x         : num [1:512] 3.48 3.49 3.5 3.51 3.52 ...\n $ y         : num [1:512] 0.00023 0.000259 0.000293 0.000329 0.00037 ...\n $ bw        : num 0.274\n $ n         : int 150\n $ old.coords: logi FALSE\n $ call      : language density.default(x = iris$Sepal.Length)\n $ data.name : chr \"iris$Sepal.Length\"\n $ has.na    : logi FALSE\n - attr(*, \"class\")= chr \"density\"\n\n\nPlot “y” and change the title and x-axis label"
+  }
+]
